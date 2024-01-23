@@ -1,0 +1,107 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.input-field {
+  width: 75%;
+  height: 40px;
+  border: 2px solid #20a0ed;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+.button {
+  color: white;
+  font-weight: 600;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 14px;
+  background-color: #20a0ed;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.button>img {
+  width: 20px;
+}
+
+#add-btn{
+    font-size: 16px;
+}
+
+.todos{
+    margin-top: 20px;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+.todo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #20a0ed;
+    border-radius: 5px;
+}
+
+.todo-content{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#completed-checkbox{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.btn-group{
+    display: flex;
+    gap: 10px;
+}
+
+.button:hover{
+    background-color: #1b8dd6;
+}
+
+.input-field:focus{
+    outline: none;
+    border: 2px solid #1b8dd6;
+}
+
+.completed{
+    border: 1px solid #ccc;
+}
+
+.completed>.todo-content{
+    text-decoration: line-through;
+    color: #ccc;
+}
+
+.completed>.btn-group>.button{
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    cursor: not-allowed;
+}
